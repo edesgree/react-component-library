@@ -1,11 +1,10 @@
 .badge {
-
   padding: 2px 12px;
   border-radius: 4px;
   display: inline-block;
   margin: 5px;
   font-size: 14px;
-  font-weight: medium;
+  font-weight: normal;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s;
