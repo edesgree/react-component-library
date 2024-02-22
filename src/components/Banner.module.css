@@ -1,0 +1,84 @@
+.banner {
+  background-color: #f4f4f4;
+  padding: 1rem 1rem 1rem 3rem;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: left;
+
+  .title {
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  /* icon in pseudo element*/
+  &::before {
+    position: absolute;
+    left: 1rem;
+    top: 1.25rem;
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &,
+  &.default {
+    background-color: #EFF6FF;
+    color: #1C51B9;
+
+    &::before {
+      background-image: url("../assets/icon-default.svg");
+    }
+
+    .title {
+      color: #1E40AF;
+    }
+  }
+
+  &.success {
+    background-color: #ECFDF5;
+    color: #047857;
+
+    .title {
+      color: #065F46;
+    }
+
+    &::before {
+      background-image: url("../assets/icon-success.svg");
+    }
+  }
+
+  &.warning {
+    background-color: #FFFBEB;
+    color: #B45309;
+
+    .title {
+      color: #92400E;
+    }
+
+    &::before {
+      background-image: url("../assets/icon-warning.svg");
+    }
+  }
+
+  &.danger {
+    background-color: #FEF2F2;
+    color: #991B1B;
+
+    .title {
+      color: #991B1B;
+    }
+
+    &::before {
+      background-image: url("../assets/icon-danger.svg");
+    }
+  }
+}

@@ -15,42 +15,42 @@
 
   &,
   &.gray {
-    background-color: #F3F4F6;
-    color: #1F2937;
+    background-color: var(--grey-color);
+    color: var(--grey-dark-color);
   }
 
   &.red {
-    background-color: #FEE2E2;
-    color: #991B1B;
+    background-color: var(--red-light-color);
+    color: var(--red-dark-color);
   }
 
   &.yellow {
-    background-color: #FEF3C7;
-    color: #92400E;
+    background-color: var(--yellow-light-color);
+    color: var(--yellow-dark-color);
   }
 
   &.green {
-    background-color: #D1FAE5;
-    color: #065F46;
+    background-color: var(--green-light-color);
+    color: var(--green-dark-color);
   }
 
   &.blue {
-    background-color: #DBEAFE;
-    color: #1E40AF;
+    background-color: var(--blue-light-color);
+    color: var(--blue-dark-color);
   }
 
   &.indigo {
-    background-color: #E0E7FF;
-    color: #3730A3;
+    background-color: var(--indigo-light-color);
+    color: var(--indigo-dark-color);
   }
 
   &.purple {
-    background-color: #EDE9FE;
-    color: #5B21B6;
+    background-color: var(--purple-light-color);
+    color: var(--purple-dark-color);
   }
 
   &.pink {
-    background-color: #FCE7F3;
-    color: #9D174D;
+    background-color: var(--pink-light-color);
+    color: var(--pink-dark-color);
   }
 }
