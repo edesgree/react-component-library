@@ -13,15 +13,13 @@ const iconMap = {
     default: iconDefault,
     // Add more icon types and their imports as needed
 };
-export default function Icon({ children, iconInfo, className }) {
+export default function Icon({ iconInfo, className }) {
 
     // Dynamically access the imported icon based on icon type
     const IconComponent = iconMap[iconInfo.type];
     return (
         <span className={`icon ${iconInfo.color} ${className}`}>
-            {children}
             {iconInfo.type && <img src={IconComponent} alt={iconInfo.type} />}
-
         </span>
     );
 }
